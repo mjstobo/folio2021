@@ -1,0 +1,36 @@
+.footer {
+    margin: 2rem auto;
+    width: 90%;
+    border-radius: 8px;
+    height: 120px;
+    color: #E65F5C;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+}
+
+.footerConter {
+    width: 87.5%;
+}
+
+.form {
+    flex: 1;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.formInput {   
+    padding: 15px;
+    border-style: none;
+    margin: 1%;
+}
+
+.formSubmit {
+
+}
