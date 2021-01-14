@@ -27,7 +27,9 @@ export default function Skills() {
             <p className={skillStyles.detailRow}>
               Luminary<span className={skillStyles.date}>2016 - Present</span>
             </p>
-            <p className={skillStyles.subdetail}>Senior Digital Producer</p>
+            <p className={skillStyles.subdetail}>
+              Senior Digital Producer & QA Team Lead
+            </p>
           </div>
           <div className={skillStyles.panel}>
             <div className={skillStyles.titleRow}>
