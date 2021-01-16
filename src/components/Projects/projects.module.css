@@ -83,7 +83,6 @@
 @media (small) {
   .panelContainer {
     flex-flow: column;
-    background-color: blue;
   }
 
   .panel {
@@ -105,11 +104,10 @@
     flex-flow: unset;
     width: 100%;
     justify-content: center;
-    background-color: red;
   }
 
   .panel {
-    max-width: 900px;
+    max-width: 95%;
   }
 
   .ctaBtn {
@@ -119,7 +117,6 @@
 
 @media (large) {
   .panelContainer {
-    background-color: green;
   }
   .ctaBtn {
     font-size: 1.15em;

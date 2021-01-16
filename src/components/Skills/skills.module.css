@@ -1,101 +1,103 @@
+@value small, medium, large, xl from '../../styles/Breakpoints.module.css';
+
 .skills {
-    background-color: #CCFF33;
-    width: 94%;
-    min-height: 580px;
-    margin: 2rem auto;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column;
+  background-color: #ccff33;
+  width: 94%;
+  min-height: 580px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
 }
 
-.intro {    
-    width: 90%;
-    align-self: center;
-    font-family: 'Karla', sans-serif;
-    padding: 0.75%;
-    padding-top: 1.5%;
+.intro {
+  width: 90%;
+  align-self: center;
+  font-family: "Karla", sans-serif;
+  padding: 0.75%;
+  padding-top: 1.5%;
 }
 
 .intro h2 {
-    margin: 1rem auto;
-    font-size: 2rem;
+  margin: 1rem auto;
+  font-size: 2rem;
 }
 
 .intro p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .panelContainer {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    border-radius: 8px;
-    padding-bottom: 1.5%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  border-radius: 8px;
+  padding-bottom: 1.5%;
 }
 
 .panel {
-    max-height: 500px;
-    flex: 1;
-    margin: 1%;
-    border-radius: 8px;
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    background-color: white;
-    padding: 0 0 0.5% 1%;
+  max-height: 500px;
+  flex: 1;
+  margin: 1%;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  background-color: white;
+  padding: 0 0 0.5% 1%;
 }
 
 .widePanel {
-    max-height: 500px;
-    margin: 1%;
-    border-radius: 8px;
-    display: flex;
-    flex: 1 100%;
-    flex-flow: column;
-    position: relative;
+  max-height: 500px;
+  margin: 1%;
+  border-radius: 8px;
+  display: flex;
+  flex: 1 100%;
+  flex-flow: column;
+  position: relative;
 }
 
 .titleRow {
-    font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .date {
-    font-size: 0.75em;
-    font-weight: 400;
+  font-size: 0.75em;
+  font-weight: 400;
 }
 
 .detailRow {
-    font-size: 0.9em;
-    max-width: 350px;
-    font-family: "Rubik", sans-serif;
-    display: flex;
-    flex-wrap: row;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
+  font-size: 0.9em;
+  max-width: 350px;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-wrap: row;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .subdetail {
-    font-size: 1.1em;
-    font-family: "Karla", sans-serif;
+  font-size: 1.1em;
+  font-family: "Karla", sans-serif;
 }
 
 .skillsList {
-    display: flex;
-    flex: auto;
-    justify-content: space-evenly;
-    color: #0F0326;
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+  color: #0f0326;
 }
 
 .skillsList i {
-    margin: 1.5%;
-    padding: 1.5%;
-    font-size: 4em;
-    transition: all 0.3s ease;
+  margin: 1.5%;
+  padding: 1.5%;
+  font-size: 4em;
+  transition: all 0.3s ease;
 }
 
 .skillsList i:hover {
-    background-color: white;
-    cursor: pointer;
-    border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 8px;
 }
