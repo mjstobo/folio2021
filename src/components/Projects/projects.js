@@ -8,9 +8,9 @@ export default function Projects() {
       <div className={projectsStyles.intro}>
         <h2>Work</h2>
         <p>
-          You can view more on my{" "}
+          You can view more of my work on{" "}
           <a href="https://github.com/mjstobo" target="_blank" rel="noreferrer">
-            GitHub profile.
+            GitHub.
           </a>
         </p>
       </div>

@@ -7,15 +7,22 @@ export default function About() {
       <h1 className={aboutStyles.title}>Welcome!</h1>
       <p className={aboutStyles.paragraph}>
         My name is <span className={aboutStyles.name}>Matthew Stobo</span>. I am
-        a <span className={aboutStyles.role}>Full-stack Developer</span> from{" "}
+        a <span className={aboutStyles.role}>Full-stack Developer</span> &{" "}
+        <span className={aboutStyles.role}>Technical Project Manager</span> from{" "}
         <span className={aboutStyles.location}>Melbourne, Australia.</span>
       </p>
       <p className={aboutStyles.paragraph}>
         I am fond of{" "}
-        <span className={aboutStyles.language}>Javascript [React, Node]</span>{" "}
-        and{" "}
+        <span className={aboutStyles.language}>Javascript [React, Node]</span>,{" "}
         <span className={aboutStyles.qa}>
-          Automated Testing [Cypress, Puppeteer].{" "}
+          Automated Testing [Cypress, Puppeteer]{" "}
+        </span>
+        and my{" "}
+        <span className={aboutStyles.name}>
+          Dogs{" "}
+          <span role="img" alt="Waving hand" aria-label="Wave">
+            🐶
+          </span>
         </span>
       </p>
 

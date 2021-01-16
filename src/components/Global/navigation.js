@@ -17,7 +17,7 @@ export default function Navigation() {
         </li>
         <li className={navigationStyles.item}>
           <a
-            href="https://www.github.com/mjstobo"
+            href="https://www.linkedin.com/in/mjstobo"
             target="_blank"
             rel="noreferrer"
           >

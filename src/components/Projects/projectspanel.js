@@ -1,14 +1,11 @@
 import React from "react"
 import projectsStyles from "./projects.module.css"
+import zapImage from "../../../static/zaplist.png"
 
 export default function ProjectsPanel() {
   return (
     <div className={projectsStyles.panel}>
-      <img
-        src="https://source.unsplash.com/600x600/?code,developer"
-        alt="Zap Spotify"
-      ></img>
-
+      <img src={zapImage} alt="Zap Spotify"></img>
       <div className={projectsStyles.content}>
         <h5 className={projectsStyles.featuredTitle}>Featured project</h5>
         <h2>Zap Spotify</h2>
