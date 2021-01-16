@@ -65,6 +65,8 @@
   font-family: "Rubik", sans-serif;
   transition: all 0.25s ease;
   border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .contactBtn:hover {

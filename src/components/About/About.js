@@ -19,7 +19,7 @@ export default function About() {
         </span>
       </p>
 
-      <button className={aboutStyles.contactBtn}>
+      <a className={aboutStyles.contactBtn} href="mailto:mjstobo@gmail.com">
         Say Hello?{" "}
         <span
           className={aboutStyles.wave}
@@ -29,7 +29,7 @@ export default function About() {
         >
           👋
         </span>
-      </button>
+      </a>
     </div>
   )
 }

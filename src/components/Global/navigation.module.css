@@ -1,45 +1,66 @@
-.nav {
-    width: 98%;
-    margin: 2rem auto;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: white;
-    border-radius: 8px;
+@value small, medium, large, xl from '../../styles/Breakpoints.module.css';
 
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap');
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 1.25em;
-    position: relative;
+.nav {
+  width: 98%;
+  margin: 2rem auto;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  border-radius: 8px;
+
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap");
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+  flex-flow: column;
 }
 
 .navlist {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-content: space-between;
-    margin-right: 3.25%;
-    padding: 10px;
-    min-height: 70px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 0;
 }
 
 .item {
-    padding: 5px;
-    margin: 10px;
+  padding: 7.5px;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
 }
 
 .item:hover {
-    color: #99EBCD;
-    cursor: pointer;
-    border-bottom: 2px solid #BFA1F7;
+  color: #99ebcd;
+  cursor: pointer;
+  border-bottom: 2px solid #bfa1f7;
 }
 
 .wordmark {
-    color: #E65F5C;
-    width: 12.5%;
-    justify-self: flex-start;
-    margin-left: 3.25%;
+  color: #e65f5c;
+  justify-self: center;
+  margin-left: 3.25%;
+  min-width: 160px;
+}
+
+@media (medium) {
+  .navlist {
+    justify-content: center;
+    min-height: 70px;
+  }
+  .wordmark {
+    justify-self: center;
+  }
+}
+
+@media (large) {
+  .navlist {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav {
+    flex-flow: row;
+  }
 }
