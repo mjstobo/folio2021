@@ -38,13 +38,13 @@
 .panel {
   max-height: 500px;
   flex: 1;
-  margin: 1%;
+  margin: 1.5%;
   border-radius: 8px;
   display: flex;
   flex-flow: column;
   position: relative;
   background-color: white;
-  padding: 0 0 0.5% 1%;
+  padding: 1% 2%;
 }
 
 .widePanel {
@@ -106,9 +106,39 @@
   .panelContainer {
     flex-flow: column wrap;
   }
+
+  .skillsList {
+    flex-flow: row wrap;
+    margin-bottom: 1.5%;
+  }
+
+  .skillsList i {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .panel {
+    padding: 2% 2%;
+  }
 }
 
 @media (medium) {
+  .skillsList i {
+    max-height: 90px;
+    height: auto;
+  }
+}
+
+@media (large) {
+  .panel {
+    padding: 1% 2%;
+  }
+
+  .skillsList i {
+    max-width: unset;
+    height: auto;
+    max-height: 110px;
+  }
 }
 
 @media (xl) {
