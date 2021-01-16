@@ -121,6 +121,14 @@
   .panelContainer {
     background-color: green;
   }
+  .ctaBtn {
+    font-size: 1.15em;
+  }
+
+  .ctaPanel {
+    margin: 5%;
+    margin-left: 0;
+  }
 }
 
 @media (xl) {
