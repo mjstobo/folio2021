@@ -13,7 +13,7 @@
   @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap");
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.15em;
   flex-flow: column;
 }
 
@@ -29,12 +29,23 @@
   padding: 7.5px;
   margin: 5px;
   border-bottom: 2px solid transparent;
+  height: 40px;
+}
+
+.item a {
+  text-decoration: none;
+  color: #f7f7f7;
 }
 
 .item:hover {
   color: #99ebcd;
   cursor: pointer;
   border-bottom: 2px solid #bfa1f7;
+}
+
+.item:hover a {
+  color: #99ebcd;
+  cursor: pointer;
 }
 
 .wordmark {
@@ -47,6 +58,7 @@
 @media (medium) {
   .navlist {
     justify-content: center;
+    align-items: center;
     min-height: 70px;
   }
   .wordmark {
