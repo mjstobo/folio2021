@@ -1,7 +1,7 @@
 @value small, medium, large, xl from '../../styles/Breakpoints.module.css';
 
 .nav {
-  width: 98%;
+  width: 90%;
   margin: 2rem auto;
   min-height: 80px;
   display: flex;

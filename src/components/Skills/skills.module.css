@@ -2,7 +2,7 @@
 
 .skills {
   background-color: #ccff33;
-  width: 94%;
+  width: 90%;
   min-height: 580px;
   margin: 2rem auto;
   border-radius: 8px;
@@ -45,6 +45,7 @@
   position: relative;
   background-color: white;
   padding: 1% 2%;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .widePanel {

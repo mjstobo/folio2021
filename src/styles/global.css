@@ -1,11 +1,9 @@
 html {
   /* background-color: #0F0326; */
   background-color: #0f0326;
-  max-width: 100%;
 }
 
 body {
-  width: 100%;
   height: auto;
   box-sizing: border-box;
 }
