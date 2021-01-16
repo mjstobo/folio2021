@@ -1,12 +1,21 @@
 html {
-    /* background-color: #0F0326; */
-    background-color: #0F0326;
-    max-width: 100%;
+  /* background-color: #0F0326; */
+  background-color: #0f0326;
+  max-width: 100%;
 }
 
 body {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+a {
+  color: #bfa1f7;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* 99ebcd-9de1fb-fffc31-bfa1f7-e65f5c */

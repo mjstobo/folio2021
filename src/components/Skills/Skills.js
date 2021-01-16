@@ -16,8 +16,8 @@ export default function Skills() {
               <i class="devicon-nodejs-plain"></i>
               <i class="devicon-express-original"></i>
               <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-git-plain"></i>
               <i class="devicon-html5-plain"></i>
+              <i class="devicon-git-plain"></i>
             </div>
           </div>
           <div className={skillStyles.panel}>

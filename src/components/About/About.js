@@ -20,7 +20,15 @@ export default function About() {
       </p>
 
       <button className={aboutStyles.contactBtn}>
-        Say Hello? <span className={aboutStyles.wave}>👋</span>
+        Say Hello?{" "}
+        <span
+          className={aboutStyles.wave}
+          role="img"
+          alt="Waving hand"
+          aria-label="Wave"
+        >
+          👋
+        </span>
       </button>
     </div>
   )

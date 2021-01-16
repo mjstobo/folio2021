@@ -1,6 +1,9 @@
+@value small, medium, large, xl from '../../styles/Breakpoints.module.css';
+
 .projects {
   background-color: #f7f7f7;
   width: 94%;
+  max-width: 94%;
   min-height: 580px;
   margin: 2rem auto;
   border-radius: 8px;
@@ -8,37 +11,131 @@
   flex-flow: column;
 }
 
-.panelContainer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  border-radius: 8px;
-  padding-bottom: 1.5%;
-}
-
 .panel {
-  max-height: 500px;
-  max-width: 80%;
-  margin: 1.25%;
+  flex-flow: column;
+  align-self: center;
+  justify-self: center;
+  max-width: 700px;
+  margin: 1.5%;
   background-color: white;
   border-radius: 8px;
   display: flex;
-  justify-content: center;
-  position: relative;
   transition: all 0.15s ease;
 }
 
 .panel img {
   border-radius: 8px;
+  width: 100%;
+  height: auto;
 }
 
-.overlay {
-  color: white;
-  font-size: 2rem;
-  position: absolute;
-  align-self: center;
-  justify-content: center;
+.panelContainer {
+  display: flex;
+  border-radius: 8px;
+  padding-bottom: 1.5%;
+}
+
+.content {
   font-family: "Karla", sans-serif;
+  margin: 2%;
+  font-size: 1.2rem;
+  align-self: center;
+  width: 87.5%;
+}
+
+.ctaBtn {
+  background: #0f0326;
+  border: 3px solid #99ebcd;
+  border-image: linear-gradient(
+    0deg,
+    rgba(153, 235, 205, 1) 0%,
+    rgba(157, 225, 251, 1) 100%
+  );
+  border-image-slice: 1 1 1 1;
+  font-size: 1.1em;
+  padding: 16px;
+  color: white;
+  margin: auto 2%;
+  margin-left: 0;
+  box-shadow: -0.15em 0.15em #bfa1f7;
+  transform-origin: left bottom;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.25s ease;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  max-width: 160px;
+}
+
+.ctaBtn:hover {
+  font-size: 1.15m;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.ctaPanel {
+  margin: 5%;
+  margin-left: 0;
+  display: flex;
+  min-height: 150px;
+}
+
+@media (small) {
+  .panelContainer {
+    flex-flow: column;
+    background-color: blue;
+  }
+
+  .panel {
+    width: 95%;
+  }
+
+  .panel img {
+    align-self: center;
+  }
+
+  .ctaPanel {
+    margin: 2.5%;
+    margin-left: 0;
+  }
+}
+
+@media (medium) {
+  .panelContainer {
+    flex-flow: unset;
+    width: 100%;
+    justify-content: center;
+    background-color: red;
+  }
+
+  .panel {
+    max-width: 900px;
+  }
+
+  .ctaBtn {
+    min-width: 160px;
+  }
+}
+
+@media (large) {
+  .panelContainer {
+    background-color: green;
+  }
+}
+
+@media (xl) {
+  .panelContainer {
+    background-color: orange;
+  }
+
+  .panel {
+    flex-flow: unset;
+    max-width: 90%;
+  }
+
+  .panel img {
+    max-width: 600px;
+  }
 }
 
 .intro {
@@ -51,17 +148,26 @@
 
 .intro h2 {
   margin: 1rem auto;
-  font-size: 2rem;
+  font-size: 1.65rem;
 }
 
 .intro p {
   font-size: 1.2rem;
 }
 
-.content {
-  font-family: "Karla", sans-serif;
-  margin: 2%;
-  width: 50%;
-  font-size: 1.2rem;
-  align-self: center;
+.ctaBtn:active {
+  border: 3px solid #bfa1f7;
+  background: linear-gradient(
+    0deg,
+    rgba(157, 225, 251, 1) 0%,
+    rgba(153, 235, 205, 1) 100%
+  );
+  color: black;
+  cursor: pointer;
+}
+
+.featuredTitle {
+  color: #e65f5c;
+  font-size: 0.7em;
+  font-family: "Rubik", sans-serif;
 }
