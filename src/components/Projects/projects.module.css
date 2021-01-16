@@ -129,10 +129,6 @@
 }
 
 @media (xl) {
-  .panelContainer {
-    background-color: orange;
-  }
-
   .panel {
     flex-flow: unset;
     max-width: 90%;

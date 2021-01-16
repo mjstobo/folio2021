@@ -101,3 +101,18 @@
   cursor: pointer;
   border-radius: 8px;
 }
+
+@media (small) {
+  .panelContainer {
+    flex-flow: column wrap;
+  }
+}
+
+@media (medium) {
+}
+
+@media (xl) {
+  .panelContainer {
+    flex-flow: row wrap;
+  }
+}
