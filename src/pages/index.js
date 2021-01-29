@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../components/global/header"
 import About from "../components/About/About"
 import Projects from "../components/Projects/projects"
-// import Footer from "../components/global/footer"
+import Footer from "../components/global/footer"
 import Skills from "../components/Skills/Skills"
 import Container from "../components/Global/container"
 import { Helmet } from "react-helmet"
@@ -23,6 +23,7 @@ export default function Home() {
       <About></About>
       <Projects></Projects>
       <Skills></Skills>
+      <Footer></Footer>
     </Container>
   )
 }

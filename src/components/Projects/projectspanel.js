@@ -16,9 +16,10 @@ export default function ProjectsPanel() {
         </p>
         <p>
           A full-stack application comprised of a React client and NodeJS API
-          back-end. Integrated with Spotify API to allow users to search, play
-          and add songs to playlists. Datamuse API allows the user to search for
-          related keywords and immediately use those in a Spotify search.
+          back-end. Integrated with Spotify API via OAuth2 to allow users to
+          search, play and add songs to playlists. Datamuse API allows the user
+          to search for related keywords and immediately use those in a Spotify
+          search.
         </p>
         <div className={projectsStyles.ctaPanel}>
           <a

@@ -2,35 +2,71 @@
     margin: 2rem auto;
     width: 90%;
     border-radius: 8px;
-    height: 120px;
     color: #E65F5C;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-flow: column;
+    min-height: 400px;
+    background-color: #99ebcd;
 }
 
-.footer h3 {
-    font-family: "Rubik", sans-serif;
+.footerTitle {
+    font-family: "Karla", sans-serif;
     font-size: 2rem;
+    margin: 1rem auto;
 }
 
-.footerConter {
-    width: 87.5%;
+.footerContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 36px;
 }
 
 .form {
     flex: 1;
     margin: 2rem auto;
-    background-color: white;
+    background-color: #99ebcd;
     border-radius: 8px;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .formInput {   
-    padding: 15px;
+    padding: 20px;
     border-style: none;
-    margin: 1%;
+    margin: 0.5%;
+    border-radius: 8px;
+    width: 60%;
+    font-size: 1.1em;
+}
+
+input[name=message] {
+    height: 120px;
 }
 
 .formSubmit {
+    background: #0f0326;
+  border: 3px solid #99ebcd;
+  border-image: linear-gradient(
+    0deg,
+    rgba(153, 235, 205, 1) 0%,
+    rgba(157, 225, 251, 1) 100%
+  );
+  border-image-slice: 1 1 1 1;
+  font-size: 1.1em;
+  padding: 16px;
+  color: white;
+  margin: auto 2%;
+  box-shadow: -0.15em 0.15em #bfa1f7;
+  transform-origin: left bottom;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.25s ease;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 1.5%;
 
 }
