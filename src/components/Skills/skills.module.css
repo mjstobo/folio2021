@@ -92,15 +92,35 @@
 
 .skillsList i {
   margin: 1.5%;
-  padding: 1.5%;
-  font-size: 4em;
+  padding: 2%;
+  width: 88px;
+  font-size: 3.8em;
   transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column;
 }
 
 .skillsList i:hover {
   background-color: white;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.skillName {
+  margin: 5px;
+  align-self: center;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0;
+  font-family: "Rubik", sans-serif;
+  color: #0f0326;
+}
+
+.skillsList i:hover > .skillName {
+  opacity: 100;
 }
 
 @media (small) {
@@ -116,6 +136,10 @@
   .skillsList i {
     max-width: 20%;
     height: auto;
+  }
+
+  .skillName {
+    opacity: 100;
   }
 
   .panel {
@@ -140,6 +164,11 @@
     height: auto;
     max-height: 110px;
   }
+
+  .skillName {
+    opacity: 0;
+  }
+
 }
 
 @media (xl) {

@@ -9,6 +9,7 @@
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
+  padding-bottom: 72px;
 }
 
 .title {

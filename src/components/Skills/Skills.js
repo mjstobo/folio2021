@@ -11,13 +11,27 @@ export default function Skills() {
           <div className={skillStyles.widePanel}>
             <h3 className={skillStyles.titleRow}>Technologies</h3>
             <div className={skillStyles.skillsList}>
-              <i className="devicon-javascript-plain"></i>
-              <i className="devicon-react-original"></i>
-              <i className="devicon-nodejs-plain"></i>
-              <i className="devicon-express-original"></i>
-              <i className="devicon-css3-plain-wordmark"></i>
-              <i className="devicon-html5-plain"></i>
-              <i className="devicon-git-plain"></i>
+              <i className="devicon-javascript-plain">
+                <span className={skillStyles.skillName}>Javascript</span>
+              </i>
+              <i className="devicon-react-original">
+                <span className={skillStyles.skillName}>React</span>
+              </i>
+              <i className="devicon-nodejs-plain">
+                <span className={skillStyles.skillName}>NodeJS</span>
+              </i>
+              <i className="devicon-express-original">
+                <span className={skillStyles.skillName}>ExpressJS</span>
+              </i>
+              <i className="devicon-css3-plain-wordmark">
+                <span className={skillStyles.skillName}>CSS3</span>
+              </i>
+              <i className="devicon-html5-plain">
+                <span className={skillStyles.skillName}>HTML5</span>
+              </i>
+              <i className="devicon-git-plain">
+                <span className={skillStyles.skillName}>Git</span>
+              </i>
             </div>
           </div>
           <div className={skillStyles.panel}>
