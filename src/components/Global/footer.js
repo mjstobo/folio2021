@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import footerStyles from "./footer.module.css"
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
           👋
         </span>
       </h2>
-      <p className={footerStyles.introText}>I'd love to hear from you about your next project</p>
+      <p className={footerStyles.introText}>I'd love to hear from you!</p>
       <div className={footerStyles.footerContainer}>
         <form
           action="https://getform.io/f/595c0523-053e-4123-bf83-38903511f9be"
@@ -22,18 +22,24 @@ export default function Footer() {
             type="text"
             name="name"
             placeholder="Name"
+            maxlength="100"
+            required
           />
           <input
             className={footerStyles.formInput}
             type="email"
             name="email"
             placeholder="E-mail address"
+            maxlength="30"
+            required
           />
-          <input
+          <textarea
             className={footerStyles.formInput}
             type="text"
             name="message"
             placeholder="How can I help?"
+            maxlength="1000"
+            required
           />
           <button className={footerStyles.formSubmit} type="submit">
             Send
