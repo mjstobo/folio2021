@@ -21,6 +21,13 @@ export default function ProjectsPanel() {
           to search for related keywords and immediately use those in a Spotify
           search.
         </p>
+        <h4>Technology</h4>
+        <ul className={projectsStyles.techList}>
+          <li>ReactJS</li>
+          <li>NodeJS / ExpressJS</li>
+          <li>SCSS</li>
+          <li>OAuth2</li>
+        </ul>
         <div className={projectsStyles.ctaPanel}>
           <a
             href="https://zap-spotify.herokuapp.com"

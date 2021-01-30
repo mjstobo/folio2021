@@ -1,3 +1,6 @@
+@value small,medium, large, xl from '../../styles/Breakpoints.module.css';
+
+
 .footer {
     margin: 2rem auto;
     width: 90%;
@@ -5,14 +8,25 @@
     color: #E65F5C;
     display: flex;
     flex-flow: column;
-    min-height: 400px;
+    min-height: 440px;
     background-color: #99ebcd;
 }
 
 .footerTitle {
-    font-family: "Karla", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 2rem;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
+    margin-top: 2em;
+}
+
+.introText {
+    align-self: center;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    color: #0f0326;
+    margin-bottom: -5px;
+    text-align: center;
+    width: 75%;
 }
 
 .footerContainer {
@@ -23,21 +37,18 @@
 
 .form {
     flex: 1;
-    margin: 2rem auto;
     background-color: #99ebcd;
     border-radius: 8px;
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-flow: column;
-    align-items: center;
 }
 
-.formInput {   
+.formInput {
     padding: 20px;
     border-style: none;
-    margin: 0.5%;
+    margin: 2%;
     border-radius: 8px;
-    width: 60%;
     font-size: 1.1em;
 }
 
@@ -47,26 +58,57 @@ input[name=message] {
 
 .formSubmit {
     background: #0f0326;
-  border: 3px solid #99ebcd;
-  border-image: linear-gradient(
-    0deg,
-    rgba(153, 235, 205, 1) 0%,
-    rgba(157, 225, 251, 1) 100%
-  );
-  border-image-slice: 1 1 1 1;
-  font-size: 1.1em;
-  padding: 16px;
-  color: white;
-  margin: auto 2%;
-  box-shadow: -0.15em 0.15em #bfa1f7;
-  transform-origin: left bottom;
-  font-family: "Rubik", sans-serif;
-  transition: all 0.25s ease;
-  border-radius: 2px;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  max-width: 160px;
-  margin-bottom: 1.5%;
+    border: 3px solid #99ebcd;
+    border-image: linear-gradient(0deg,
+            rgba(153, 235, 205, 1) 0%,
+            rgba(157, 225, 251, 1) 100%);
+    border-image-slice: 1 1 1 1;
+    font-size: 1.1em;
+    padding: 16px;
+    color: white;
+    margin: auto 2%;
+    box-shadow: -0.15em 0.15em #bfa1f7;
+    transform-origin: left bottom;
+    font-family: "Rubik", sans-serif;
+    transition: all 0.25s ease;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    max-width: 160px;
+    margin-bottom: 1.5%;
+    cursor: pointer;
+
+}
+
+.formSubmit:hover {
+    padding: 18px;
+    cursor: pointer;
+  }
+  
+
+@media (medium) {
+    .form {
+        max-width: 70%;
+    }
+
+    .footerContainer {
+        justify-content: center;
+    }
+
+    .formInput {
+        margin: 1%;
+    }
+
+}
+
+@media (large) {
+    .formInput {
+        margin: 0.5%;
+    }
+    
+    .formSubmit {
+        margin-top: 18px;
+    }
 
 }

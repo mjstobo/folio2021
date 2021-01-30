@@ -4,8 +4,13 @@ import footerStyles from "./footer.module.css"
 export default function Footer() {
   return (
     <div className={footerStyles.footer}>
-      <h2 className={footerStyles.footerTitle}>Say Hello!</h2>
-
+      <h2 className={footerStyles.footerTitle}>
+        Say Hello!{" "}
+        <span role="img" aria-label="wave emoji">
+          👋
+        </span>
+      </h2>
+      <p className={footerStyles.introText}>I'd love to hear from you about your next project</p>
       <div className={footerStyles.footerContainer}>
         <form
           action="https://getform.io/f/595c0523-053e-4123-bf83-38903511f9be"
